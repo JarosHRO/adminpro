@@ -16,8 +16,7 @@ import { Graphics1Component } from './graphics1/graphics1.component';
 import { ProgressComponent } from './progress/progress.component';
 import { PagesComponent } from './pages.component';
 import { GraphicsDonaComponent } from '../components/graphics-dona/graphics-dona.component';
-
-
+import { AccountSettingsComponent } from './account-settings/account-settings.component';
 
 @NgModule({
     declarations: [
@@ -26,7 +25,8 @@ import { GraphicsDonaComponent } from '../components/graphics-dona/graphics-dona
         Graphics1Component,
         ProgressComponent,
         IncrementComponent,
-        GraphicsDonaComponent
+        GraphicsDonaComponent,
+        AccountSettingsComponent
     ],
     exports:  [
         DashboardComponent,

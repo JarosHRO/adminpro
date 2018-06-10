@@ -3,14 +3,13 @@ import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 
 // Services
-import { SharedService } from './services/shared.service';
-import { SidebarService } from './services/sidebar.service';
 
 // Rutas
 import { APP_ROUTES } from './app.routes';
 
 // Modulos
 import { PagesModule } from './pages/pages.module';
+import { ServiceModule } from './services/service.module';
 
 // Components
 import { AppComponent } from './app.component';
@@ -28,12 +27,10 @@ import { RegisterComponent } from './login/register.component';
     BrowserModule,
     APP_ROUTES,
     PagesModule,
-    FormsModule
+    FormsModule,
+    ServiceModule
   ],
-  providers: [
-    SharedService,
-    SidebarService
-  ],
+  providers: [],
   bootstrap: [
     AppComponent
   ],
